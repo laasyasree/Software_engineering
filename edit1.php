@@ -28,7 +28,7 @@ if(isset($_POST["submit"])){
         // Upload file to server
         if(move_uploaded_file($_FILES["uploadfile"]["tmp_name"], $targetFilePath)){
             // Insert image file name into database
-            $insert = $con->query("INSERT into `product_details` (`fldProductName`, `fldProductPrice`, `fldUserName`, `fldUserEmail`, `fldPhoneNumber`, `fldProductDescription`, `fldImage`) VALUES ('$p_name', '$p_cost', '$u_name','$email', '$u_num', '$subject', '$fileName')");
+            $insert = $con->query("UPDATE product_details SET fldProductName='$p_name' , fldProductPrice='$p_cost' , fldUserName='$u_name' , fldPhoneNumber='$u_num' , fldProductDescription='$subject' , fldImage='$fileName' WHERE fldUserEmail='$email';");
             if($insert){
                 header('Location: productdetails.php');
             }else{

@@ -64,7 +64,7 @@ p{
     margin: 25px 0;
 }
 
-.button{
+.button,  .modal .modal-content button{
     display: inline-block;
     background: darkred;
     color: #fff;
@@ -73,7 +73,7 @@ p{
     border-radius: 30px; 
     transition: background 0.3s;
 }
-.button:hover{
+.button:hover,  .modal .modal-content button:hover{
     background: #281515;
 }
 
@@ -187,7 +187,7 @@ h4{
     background: #700f02;
     color: #fff;
     font-size: 14px;
-    padding: 60px 0 20px;
+    padding: 60px 0px;
 }
 .footer p{
     color: #fff;

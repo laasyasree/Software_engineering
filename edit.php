@@ -1,3 +1,18 @@
+<?php
+$con = mysqli_connect('localhost', 'root', '', 'product_uploads');
+
+// get the post records
+$uemail = $_POST['uemail'];
+        
+// insert in database 
+$sql= "SELECT fldProductName, fldProductPrice, fldUserName, fldUserEmail, fldPhoneNumber, fldProductDescription, fldImage FROM product_details WHERE fldUserEmail = '$uemail' ";
+$result = mysqli_query($con,$sql);
+$check = mysqli_fetch_array($result);
+$record = mysqli_fetch_assoc($result);
+if(!$check){
+    header('Location: productdetails.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,25 +84,26 @@ a {
 </head>
 <body>
 <fieldset>
-<form name="upload_product" method="POST" enctype="multipart/form-data" action="upload.php">
+<form name="upload_product" method="POST" enctype="multipart/form-data" action="edit1.php">
   <div class="container">
-    <h1>Upload</h1>
-    <p>Please fill in this form to upload a product.</p>
+    <h1>Edit</h1>
+    <p>Please fill in this form to edit a product.</p>
     <hr>
 	 <label for="product name"><b>Product name</b></label>
-    <input type="text" placeholder="Enter product name" name="p_name" id="p_name" required> 
+    <input type="text" value="<?php echo $record['fldProductName']; ?>" name="p_name" id="p_name" required> 
     <label for="Product price"><b>Product price</b></label>
-    <input type="text" placeholder="Enter price" name="p_cost" id="p_cost" required> 
+    <input type="text" value="<?php echo $record['fldProductPrice']; ?>" name="p_cost" id="p_cost" required> 
     <label for="user name"><b>Name</b></label>
-    <input type="text" placeholder="Enter user name" name="u_name" id="u_name" required> 
+    <input type="text" value="<?php echo $record['fldUserName']; ?>" name="u_name" id="u_name" required> 
     <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" value="<?php echo $record['fldUserEmail']; ?>" name="email" id="email" required>
     <label for="number"><b>Contact number</b></label>
-    <input type="text" placeholder="Enter phone number" name="u_num" id="u_num" required> 
+    <input type="text" value="<?php echo $record['fldPhoneNumber']; ?>" name="u_num" id="u_num" required> 
     <label for="pd"><b>Product description</b></label>
-    <textarea id="subject" name="subject" placeholder="Write product description.." style="height:170px"></textarea>
-    <input type="file" name="uploadfile" value="uploadfile">
-    <input type="submit" value="Upload" name="submit" class="registerbtn">
+    <textarea id="subject" name="subject" placeholder="Write product description.." style="height:170px"><?php echo $record['fldProductDescription']; ?></textarea>
+    <p> Image: <?php echo $record['fldImage']; ?> </p>
+    <input type="file" name="uploadfile">
+    <input type="submit" value="Edit" name="submit" class="registerbtn">
   </div>
 </form>
 </fieldset>

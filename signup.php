@@ -22,7 +22,7 @@ $rs = mysqli_query($con, $sql);
 
 if($rs)
 {
-    header('Location: index.html');
+    header('Location: login.html');
 }
 
 }
