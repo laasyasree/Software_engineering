@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exchange System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images\home.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="help.html">Help</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <h1>All-in-one Exchange<br>Site for Students!</h1>
+                    <a href="about.html" class="button">Explore &#8594;</a>
+                </div>
+                <div class="col-1">
+                    <img src="images/students.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------featured categories------>
+    <div class="categories">
+        <div class="container-2">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/cat-1.jpg">
+                </div>
+                <div class="col-2">
+                    <img src="images/cat-2.jpg">
+                </div>
+                <div class="col-2">
+                    <img src="images/cat-3.png">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!------featured products-->
+    <div class="container-2">
+        <h2 class="title">New Arrivals</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/product-2.jpg">
+                <h4>Object Oriented Programming in C++</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 250</p>
+            </div>
+            <div class="col-3">
+                <img src="images/product-1.jpg">
+                <h4>An Introduction to Object Oriented Programming in C++</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 200</p>
+            </div>
+            <div class="col-3">
+                <img src="images/product-3.jpg">
+                <h4>Operating System Concepts</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 150</p>
+            </div>
+            <div class="col-3">
+                <img src="images/product-4.jpg">
+                <h4>Database Management Systems</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 300</p>
+            </div>
+        </div>
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="images/featuredprod-1.jpg">
+                <h4>6 Inch Single Size Cooling Foam Mattress</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 350</p>
+            </div>
+            <div class="col-3">
+                <img src="images/featuredprod-2.jpg">
+                <h4>Cloud Computing - A Practical Approach</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 200</p>
+            </div>
+            <div class="col-3">
+                <img src="images/featuredprod-3.jpg">
+                <h4>Adjusto College Desk Lamp</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 150</p>
+            </div>
+            <div class="col-3">
+                <img src="images/featuredprod-4.jpg">
+                <h4>An Integrated Approach to Computer Networks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rs 150</p>
+            </div>
+        </div>
+    </div>
+    <!----------Best Sellers--------->
+    <div class="bestsellers">
+        <div class="container-2">
+            <div class="row">
+                <div class="col-2">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/user-1.png">
+                    <h3>Abc DEfgh - AM.EN.U4CSE18568</h3>
+                </div>
+                <div class="col-2">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.png">
+                    <h3>Xyz Pqrs - AM.EN.U4CSE18169</h3>
+                </div>
+                <div class="col-2">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-3.png">
+                    <h3> Cde Stuv - AM.EN.U4CSE18189</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------footer-------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android mobile phones.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/home.png">
+                    <p>Our Moto Is To Sustainably Make The Pleasure and Benefits
+                    of Online Exchanging Possible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Blog</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Team 5</p>
+        </div>
+    </div>
+    <!-------js for toggle menu----------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

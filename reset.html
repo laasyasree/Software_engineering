@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+padding: 50px 500px;
+	font-family: Arial, Helvetica, sans-serif;}
+h2{
+	text-align: center;
+}
+form {padding: 0px 27px;
+	width: 88%;
+border: 3px solid #f1f1f1;}
+
+.container{
+	width: 93%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+	float: right;
+	width: 20%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<fieldset>
+<h2>Reset Password</h2>
+<form name="reset" method="POST" action="reset.php" >
+
+  <div class="container">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="rpsw"><b>Repeat password</b></label>
+    <input type="password" placeholder="Re-enter Password" name="rpsw" required>
+
+    <button type="submit">Reset</button>
+  </div>
+
+  <div class="container">
+    <span class="cancelbtn"><a href="login.html">Cancel</span>
+  </div>
+</form>
+</fieldset>
+</body>
+</html>
