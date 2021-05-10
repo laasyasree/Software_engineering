@@ -1,5 +1,5 @@
 # Software_engineering project
-An online shopping website to buy, rent and sell of merchandise among college students. 
+An online shopping website to buy and sell of merchandise among college students. 
 ![homepage](https://user-images.githubusercontent.com/43827236/117608370-91320400-b17b-11eb-9e3a-0dec473d95ad.PNG)
 
 ## Why it’s cool:
