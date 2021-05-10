@@ -47,7 +47,7 @@ Step 8: Open any browser and run
 4. **Browsing feature for users** - Display of products according to date/time(recent uploads) with suggestions to the products uploaded by recently-visited sellers.
 5. **Search bars and filters** - According to the product details entered by the user, the products are displayed via system searches (through product categories in the database).
 6. **Add to Cart** - they can also add the product to their carts for future. 
-7. Alert/Notifications - the seller will receive notifications about the buyer of his/her product and will have the option of accepting or rejecting the request.
+7. **Alert/Notifications** - the seller will receive notifications about the buyer of his/her product and will have the option of accepting or rejecting the request.
     - If accepted by the seller - it will provide an instant messaging option between the buyer and the seller. 
     - If rejected by the seller - the buyer will get a notification saying the product is unavailable.
 8. **Chat option** - A chat window between the buyer and seller, upon the request being accepted by the seller will allow further communications and follow-ups regarding the exchange and transaction of the product.
